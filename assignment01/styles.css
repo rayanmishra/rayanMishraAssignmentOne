@@ -1,0 +1,386 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM--- 
+
+--Fonts
+GreatVibes(Regular)
+Cabin( bold, Regular)
+
+FONT CATALOG
+Logo(h1):
+GreatVibes, Regular, 55px
+
+Heading(h2):
+GreatVibes, Regular, 42px
+
+Heading(h2):
+Cabin, Bold, 32px (center)
+
+Heading(h2):
+Cabin, Bold, 24px
+
+Heading:
+Cabin, Bold, 24px
+
+Menu:
+Cabin, Bold, 20px, Right
+
+Button:
+Cabin, Bold, 20px, Center
+
+body:
+Cabin, Regular, 18px
+center, Line height: 29px
+
+--- 02 COLORS--- 
+
+Accent color- #FDC800
+
+Black shade- #232323
+
+Background : #Eaedf4
+
+White shade: #f8f8f8
+
+
+
+*/
+
+/***********************/
+/* General Component */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2--col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--3--col--responsive {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.grid--6--col {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.6rem 3.2rem;
+
+  background-color: #fdc800;
+  color: #232323;
+}
+
+.wrapper {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Hero SECTION */
+
+.header {
+  background: url(./images/asset-1.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+h1 {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 4.2rem;
+  color: #232323;
+  font-weight: normal;
+}
+
+.main-nav {
+  grid-column: 3/-1;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #232323;
+}
+
+.hero-section-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-section-text-logo {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 15rem;
+  color: #232323;
+}
+
+.hero-section-text-copy {
+  font-family: "Cabin", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+/***********************/
+/* About Section */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8rem 0;
+}
+
+.about-section-heading {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 4.2rem;
+  color: #232323;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+
+.about-section-text {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  color: #232323;
+  line-height: 2.9rem;
+  text-align: center;
+
+  width: 60%;
+  margin-bottom: 3rem;
+}
+
+/***********************/
+/* Icon Section */
+/***********************/
+
+.section-icons {
+  background-color: #232323;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15rem;
+  padding: 8rem 0;
+}
+
+.icon-image {
+  width: 12rem;
+  height: auto;
+}
+
+.icon-image p {
+  text-align: center;
+  color: #f8f8f8;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+/***********************/
+/* Gallery Section */
+/***********************/
+
+.section-gallery {
+  gap: 5rem;
+}
+
+.gallery-images {
+  padding: 8rem 0;
+  width: 100%;
+}
+
+/***********************/
+/* Articles Section */
+/***********************/
+
+.article-text-box {
+  display: flex;
+  flex-direction: column;
+  background: #eaedf4;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-text-box-heading {
+  text-align: center;
+  color: #232323;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.article-section-text {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  color: #232323;
+  line-height: 2.9rem;
+  text-align: center;
+  width: 40%;
+  margin-bottom: 3rem;
+}
+
+.article-image {
+  width: 100%;
+  display: block;
+}
+
+/***********************/
+/* Meet the cook Section */
+/***********************/
+
+.section-meet-the-cook {
+  padding: 8rem 0;
+  gap: 3rem;
+}
+
+.cook-image {
+  width: 100%;
+  display: block;
+}
+
+.cook-section-text-container {
+  grid-column: 2/-1;
+}
+
+.cook-section-heading {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 4.2rem;
+  color: #232323;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+
+.cook-section-text {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  color: #232323;
+  line-height: 2.9rem;
+  margin-bottom: 3rem;
+}
+
+/***********************/
+/* Footer */
+/***********************/
+
+.section-footer {
+  background-color: #232323;
+  padding: 8rem 0;
+}
+
+.section .footer {
+  gap: 3rem;
+}
+
+.footer-header-text {
+  color: #f8f8f8;
+  font-family: "Cabin", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-nav-list {
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footer-nav .footer-link {
+  text-transform: uppercase;
+}
+
+.contact p,
+.stay-updated p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  color: #f8f8f8;
+  line-height: 3.1rem;
+}
+
+.contact span {
+  display: block;
+}
+
+/* Form */
+.stay-updated {
+  grid-column: 4/-1;
+}
+.email-form {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.subscribe-form {
+  width: 60%;
+}
+
+.subscribe-form input {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.btn-sunscribe:link,
+.btn-sunscribe:visited {
+  padding: 1.2rem 3.2rem;
+}
