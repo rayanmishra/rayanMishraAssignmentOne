@@ -33,16 +33,16 @@
 
   <body>
     <!-- Desktop Nav -->
-    <!-- set up ids to make NaV work And add icons -->
-    <header class="header">
+
+    <header class="header" id="home">
       <div class="wrapper">
         <h1>Tasty</h1>
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">Home</a></li>
-            <li><a class="main-nav-link" href="#">About</a></li>
-            <li><a class="main-nav-link" href="#">Blog</a></li>
-            <li><a class="main-nav-link" href="#">Contact</a></li>
+            <li><a class="main-nav-link" href="#home">Home</a></li>
+            <li><a class="main-nav-link" href="#about">About</a></li>
+            <li><a class="main-nav-link" href="#blog">Blog</a></li>
+            <li><a class="main-nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
         <ion-icon name="menu-outline"></ion-icon>
@@ -58,6 +58,7 @@
         <ion-icon name="logo-twitter"></ion-icon>
       </div>
     </header>
+
     <!-- About Tasty section -->
     <main>
       <section id="about" class="about-section wrapper">
@@ -74,17 +75,25 @@
       <!-- icon section -->
 
       <section class="section-icons">
-        <div class="wrapper icon-container">
+        <div class="wrapper icon-container grid grid--3--col--responsive">
           <div class="icon-image">
-            <img src="./images/fork-01.png" />
+            <img src="./images/fork-01.png" alt="icon of a fork" />
             <p>Recipes</p>
           </div>
           <div class="icon-image">
-            <img class="icon-image" src="./images/recipe-icon-01.png" />
+            <img
+              class="icon-image"
+              src="./images/recipe-icon-01.png"
+              alt="icon of a recipe book"
+            />
             <p>Cooking tips</p>
           </div>
           <div class="icon-image">
-            <img class="icon-image" src="./images/mail-01.png" />
+            <img
+              class="icon-image"
+              src="./images/mail-01.png"
+              alt="icon of a postcard"
+            />
             <p>Contact</p>
           </div>
         </div>
@@ -92,22 +101,31 @@
 
       <!-- Gallery section -->
 
-      <!--IMAGE ALT text-->
       <section>
         <div class="wrapper section-gallery grid grid--3--col--responsive">
-          <img class="gallery-images" src="./images/asset-2.jpg" />
-          <img class="gallery-images" src="./images/asset-3.jpg" />
+          <img
+            class="gallery-images"
+            src="./images/asset-2.jpg"
+            alt="picture of  cut lime and blueberries"
+          />
+          <img
+            class="gallery-images"
+            src="./images/asset-3.jpg"
+            alt="picture of
+          decorated salad"
+          />
           <img
             class="gallery-images gallery-images-3"
             src="./images/asset-4.jpg"
+            alt="picture of
+            soup"
           />
         </div>
       </section>
 
       <!--articles section -->
 
-      <!--IMAGE ALT text-->
-      <section>
+      <section id="blog">
         <div class="section-article grid grid--2--col">
           <div class="article-text-box">
             <h2 class="article-text-box-heading">Cooking Tips</h2>
@@ -118,15 +136,23 @@
             <a href="#" class="btn">Read more</a>
           </div>
           <div class="article-image-box">
-            <img class="article-image" src="./images/asset-5.jpg" />
+            <img
+              class="article-image"
+              src="./images/asset-5.jpg"
+              alt="picture of few cut limes, Kiwis and a mobile tablet"
+            />
           </div>
 
           <!-- gallery row 2 -->
 
           <div class="article-image-box">
-            <img class="article-image" src="./images/asset-6.jpg" />
+            <img
+              class="article-image"
+              src="./images/asset-6.jpg"
+              alt="picture of mobile tablet on kitchentop"
+            />
           </div>
-          <div class="article-text-box">
+          <div class="article-text-box article-last">
             <h2 class="article-text-box-heading">Popular Recipes</h2>
             <p class="article-section-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
@@ -170,13 +196,21 @@
 
     <!--footer -->
 
-    <footer class="section-footer">
+    <footer class="section-footer" id="contact">
       <div class="footer wrapper grid grid--6--col">
         <div class="contact">
           <h2 class="footer-header-text">Contact</h2>
-          <p>info@email.com</p>
-          <p>123-456-7890</p>
-          <p>123 some road, <span>Toronto. ON</span></p>
+          <p class="footer-contact-desktop">info@email.com</p>
+          <p class="footer-contact-desktop">123-456-7890</p>
+          <p class="footer-contact-desktop">123 some road,</p>
+          <p class="footer-contact-desktop">Toronto. ON</p>
+          <p class="footer-contact-mobile email">
+            info@email.com, 123-456-7890
+          </p>
+
+          <p class="footer-contact-mobile address">
+            123 some road, Toronto. ON
+          </p>
         </div>
 
         <div class="pages">
@@ -211,10 +245,11 @@
               <label for="email"></label>
               <input type="email" id="email" name="email" required />
             </form>
-            <a href="#" class="btn btn-sunscribe">Subscribe</a>
+            <a href="#" class="btn btn-subscribe">Subscribe</a>
           </div>
         </div>
       </div>
+      <p class="copyright-text">Copyright &copy 2018 HackerYou</p>
     </footer>
   </body>
 </html>
