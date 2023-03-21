@@ -71,7 +71,7 @@ html {
 }
 
 .grid--3--col--responsive {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid--6--col {
@@ -117,6 +117,11 @@ html {
   width: 90%;
   margin: 0 auto;
   padding-top: 1rem;
+}
+.wrapper ion-icon {
+  font-size: 6.5rem;
+  grid-column: 3/-1;
+  display: none;
 }
 
 h1 {
@@ -164,6 +169,20 @@ h1 {
   font-family: "Cabin", sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
+}
+
+.hero-section-media-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+
+.hero-section-media-icons ion-icon {
+  color: #fdc800;
+  font-size: 2.4rem;
 }
 
 /***********************/
@@ -326,7 +345,7 @@ h1 {
 .footer-header-text {
   color: #f8f8f8;
   font-family: "Cabin", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -383,4 +402,131 @@ h1 {
 .btn-sunscribe:link,
 .btn-sunscribe:visited {
   padding: 1.2rem 3.2rem;
+}
+
+/**************************/
+/* Media Queries */
+/**************************/
+
+/***********************/
+/* 1200px */
+/***********************/
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .footer-header-text {
+    font-size: 2rem;
+  }
+
+  .article-text-box-heading {
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .article-section-text {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 1.6rem 3rem;
+  }
+}
+
+/***********************/
+/* 1000px */
+/***********************/
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 48%;
+  }
+  .article-text-box-heading {
+    margin-bottom: 2rem;
+  }
+
+  .article-section-text {
+    margin-bottom: 2rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1.6rem 2.8rem;
+  }
+}
+
+/***********************/
+/* 800px */
+/***********************/
+
+@media (max-width: 800px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-text-box-heading {
+    margin-bottom: 1rem;
+  }
+
+  .article-section-text {
+    margin-bottom: 1.2rem;
+    line-height: 2.1rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.4rem 2.6rem;
+  }
+
+  .section-gallery {
+    gap: 0rem;
+    width: 100%;
+  }
+
+  .gallery-images {
+    padding: 0;
+  }
+
+  .gallery-images-3 {
+    display: none;
+  }
+
+  .section-meet-the-cook {
+    padding: 5rem 0;
+    gap: 2rem;
+  }
+
+  /* .cook-image-container {
+    width: 95%;
+  } */
+
+  .cook-section-heading {
+    font-size: 4.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .cook-section-text {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* .main-nav {
+    display: none;
+  }
+
+  .wrapper ion-icon {
+    display:block;
+  } */
 }
